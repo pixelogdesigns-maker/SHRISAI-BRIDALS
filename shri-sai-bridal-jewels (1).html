@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Shri Sai Bridal Jewels — Timeless Bridal Jewellery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+/* ─── RESET & BASE ─── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Jost',sans-serif;background:#FFFFFF;color:#1A1A1A;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:'Jost',sans-serif}
+
+/* ─── CSS VARIABLES ─── */
+:root{
+  --white:#FFFFFF;
+  --cream:#FAF9F7;
+  --stone:#F5F0EB;
+  --charcoal:#1A1A1A;
+  --mid:#6B6B6B;
+  --light:#BCBCBC;
+  --border:#E8E4DF;
+  --gold:#B8882E;
+  --gold-light:#D4A84B;
+  --blush:#F5EEE8;
+  --serif:'Cormorant Garamond',serif;
+  --sans:'Jost',sans-serif;
+  --ease:cubic-bezier(.25,.46,.45,.94);
+}
+
+/* ─── TYPOGRAPHY ─── */
+.serif{font-family:var(--serif)}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.15}
+.display{font-size:clamp(2.8rem,6vw,5.5rem);font-style:italic;letter-spacing:-.02em}
+.headline{font-size:clamp(2rem,4vw,3.5rem);font-style:italic}
+.subheadline{font-size:clamp(1.4rem,2.5vw,2rem)}
+.eyebrow{font-family:var(--sans);font-size:.65rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.body{font-size:.875rem;line-height:1.75;color:var(--mid);font-weight:300}
+.caption{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+
+/* ─── LAYOUT ─── */
+.container{max-width:1320px;margin:0 auto;padding:0 40px}
+.section{padding:100px 0}
+.section-header{text-align:center;margin-bottom:64px}
+.section-header p{margin-top:16px;max-width:480px;margin-left:auto;margin-right:auto}
+
+/* ─── BUTTONS ─── */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;font-family:var(--sans);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;transition:all .3s var(--ease)}
+.btn-dark{background:var(--charcoal);color:var(--white)}
+.btn-dark:hover{background:#333;transform:translateY(-1px)}
+.btn-outline{border:1px solid var(--charcoal);color:var(--charcoal)}
+.btn-outline:hover{background:var(--charcoal);color:var(--white)}
+.btn-ghost{border:1px solid rgba(255,255,255,.6);color:var(--white)}
+.btn-ghost:hover{background:var(--white);color:var(--charcoal)}
+.btn-gold{background:var(--gold);color:var(--white)}
+.btn-gold:hover{background:#9a7222;transform:translateY(-1px)}
+.link-arrow{display:inline-flex;align-items:center;gap:8px;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;color:var(--charcoal);transition:gap .3s var(--ease)}
+.link-arrow:hover{gap:14px}
+.link-arrow::after{content:'→'}
+
+/* ─── HEADER ─── */
+header{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .4s var(--ease),border-color .4s,padding .3s;padding:20px 0;border-bottom:1px solid transparent}
+header.scrolled{background:var(--white);border-color:var(--border);padding:12px 0;box-shadow:0 2px 20px rgba(0,0,0,.04)}
+.nav-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;padding:0 40px;max-width:100%}
+.nav-logo{font-family:var(--serif);font-size:1.5rem;font-weight:300;letter-spacing:.06em;color:var(--charcoal);line-height:1.1;text-align:center}
+.nav-logo span{display:block;font-size:.6rem;font-family:var(--sans);letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-top:2px}
+.nav-links{display:flex;gap:36px}
+.nav-links a{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--charcoal);transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s var(--ease)}
+.nav-links a:hover::after{width:100%}
+.nav-icons{display:flex;align-items:center;gap:20px;justify-content:flex-end}
+.nav-icons button,.nav-icons a{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--charcoal);display:flex;align-items:center;gap:6px;transition:color .2s}
+.nav-icons button:hover,.nav-icons a:hover{color:var(--gold)}
+.cart-badge{display:inline-flex;width:16px;height:16px;background:var(--gold);color:var(--white);border-radius:50%;font-size:.55rem;align-items:center;justify-content:center;font-weight:600}
+.hamburger{display:none;flex-direction:column;gap:5px;width:24px}
+.hamburger span{height:1px;background:var(--charcoal);transition:all .3s}
+header.light .nav-logo,.header.light .nav-links a,.header.light .nav-icons button,.header.light .nav-icons a{color:var(--white)}
+header.light .nav-logo span{color:rgba(255,255,255,.7)}
+
+/* ─── MOBILE NAV ─── */
+.mobile-menu{position:fixed;inset:0;background:var(--white);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;transform:translateX(-100%);transition:transform .5s var(--ease)}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu a{font-family:var(--serif);font-size:2.5rem;font-style:italic;color:var(--charcoal);transition:color .2s}
+.mobile-menu a:hover{color:var(--gold)}
+.mobile-close{position:absolute;top:24px;right:32px;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;cursor:pointer}
+
+/* ─── HERO ─── */
+.hero{height:100vh;min-height:700px;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#F2EDE8}
+.hero-bg{position:absolute;inset:0;overflow:hidden}
+.hero-bg-img{width:100%;height:100%;object-fit:cover;transition:transform 8s var(--ease)}
+.hero:hover .hero-bg-img{transform:scale(1.03)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,10,5,.55) 0%,transparent 60%)}
+.hero-content{position:relative;z-index:2;padding:0 60px 80px;max-width:700px}
+.hero-content .eyebrow{color:rgba(255,255,255,.8);margin-bottom:16px}
+.hero-content h1{color:var(--white);margin-bottom:24px}
+.hero-content p{color:rgba(255,255,255,.7);margin-bottom:36px;max-width:380px;font-size:.875rem;line-height:1.8}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+.hero-stats{position:absolute;right:60px;bottom:80px;z-index:2;display:flex;flex-direction:column;gap:24px;text-align:right}
+.hero-stat strong{display:block;font-family:var(--serif);font-size:2.4rem;font-weight:300;color:var(--white);line-height:1}
+.hero-stat span{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px}
+.hero-scroll span{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.scroll-line{width:1px;height:40px;background:rgba(255,255,255,.3);position:relative;overflow:hidden}
+.scroll-line::after{content:'';position:absolute;top:-100%;left:0;width:100%;height:100%;background:rgba(255,255,255,.8);animation:scrollDown 2s ease-in-out infinite}
+@keyframes scrollDown{to{top:200%}}
+
+/* ─── CATEGORY STRIP ─── */
+.cat-strip{padding:60px 0;border-bottom:1px solid var(--border)}
+.cat-strip-inner{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cat-pill{display:flex;flex-direction:column;align-items:center;gap:14px;cursor:pointer;transition:all .3s var(--ease)}
+.cat-pill-img{width:90px;height:90px;border-radius:50%;overflow:hidden;border:1.5px solid var(--border);transition:border-color .3s,transform .3s}
+.cat-pill-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.cat-pill:hover .cat-pill-img{border-color:var(--gold)}
+.cat-pill:hover .cat-pill-img img{transform:scale(1.1)}
+.cat-pill span{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;transition:color .3s}
+.cat-pill:hover span{color:var(--gold)}
+
+/* ─── PROMO BANNERS ─── */
+.promo-duo{display:grid;grid-template-columns:1fr 1fr;height:540px}
+.promo-card{position:relative;overflow:hidden;cursor:pointer}
+.promo-card-img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.promo-card:hover .promo-card-img{transform:scale(1.04)}
+.promo-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,8,5,.7) 0%,rgba(10,8,5,.1) 60%)}
+.promo-card-content{position:absolute;bottom:0;left:0;padding:44px 48px}
+.promo-card-content .eyebrow{color:rgba(255,255,255,.65);margin-bottom:10px}
+.promo-card-content h3{color:var(--white);font-size:clamp(1.6rem,2.5vw,2.4rem);font-style:italic;margin-bottom:20px;line-height:1.2}
+.promo-card-content .link-arrow{color:var(--white);border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:3px}
+.promo-card-content .link-arrow:hover{border-color:var(--white)}
+
+/* ─── PRODUCTS ─── */
+.products-tabs{display:flex;gap:0;justify-content:center;margin-bottom:48px;border-bottom:1px solid var(--border)}
+.tab-btn{padding:12px 28px;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;color:var(--mid);transition:all .3s;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tab-btn.active{color:var(--charcoal);border-color:var(--charcoal)}
+.tab-btn:hover:not(.active){color:var(--charcoal)}
+.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.product-card{background:var(--white);position:relative;overflow:hidden;cursor:pointer}
+.product-img-wrap{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--stone)}
+.product-img-wrap img{width:100%;height:100%;object-fit:cover;transition:opacity .5s var(--ease)}
+.product-img-alt{position:absolute;inset:0;object-fit:cover;opacity:0;transition:opacity .5s var(--ease)}
+.product-card:hover .product-img-wrap img{opacity:0}
+.product-card:hover .product-img-alt{opacity:1}
+.product-badge{position:absolute;top:16px;left:16px;z-index:2;background:var(--charcoal);color:var(--white);font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;font-weight:500}
+.product-badge.rental{background:var(--gold)}
+.product-actions{position:absolute;top:16px;right:16px;z-index:2;display:flex;flex-direction:column;gap:8px;opacity:0;transform:translateX(10px);transition:all .3s var(--ease)}
+.product-card:hover .product-actions{opacity:1;transform:translateX(0)}
+.product-action-btn{width:36px;height:36px;background:var(--white);display:flex;align-items:center;justify-content:center;font-size:.9rem;transition:background .2s;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.product-action-btn:hover{background:var(--gold);color:var(--white)}
+.product-add{position:absolute;bottom:0;left:0;right:0;background:var(--charcoal);color:var(--white);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;padding:13px;text-align:center;font-weight:500;transform:translateY(100%);transition:transform .4s var(--ease)}
+.product-card:hover .product-add{transform:translateY(0)}
+.product-info{padding:20px 20px 24px}
+.product-cat{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.product-name{font-family:var(--serif);font-size:1.1rem;margin-bottom:8px;line-height:1.3}
+.product-stars{display:flex;gap:3px;margin-bottom:10px}
+.star{color:var(--gold);font-size:.75rem}
+.star.empty{color:var(--border)}
+.product-price{font-size:.875rem;font-weight:500}
+.product-price .original{text-decoration:line-through;color:var(--light);font-weight:300;margin-right:8px}
+.product-price .rental-tag{font-size:.65rem;color:var(--gold);letter-spacing:.08em}
+.products-footer{text-align:center;margin-top:48px}
+
+/* ─── FULL WIDTH BANNER ─── */
+.fw-banner{position:relative;height:500px;overflow:hidden}
+.fw-banner-img{width:100%;height:100%;object-fit:cover}
+.fw-banner-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(10,8,5,.7) 0%,rgba(10,8,5,.2) 60%,transparent 100%)}
+.fw-banner-content{position:absolute;top:50%;left:8%;transform:translateY(-50%);max-width:480px}
+.fw-banner-content .eyebrow{margin-bottom:16px}
+.fw-banner-content h2{color:var(--white);margin-bottom:16px;font-size:clamp(2rem,3.5vw,3rem);font-style:italic}
+.fw-banner-content p{color:rgba(255,255,255,.75);margin-bottom:32px;font-size:.875rem;line-height:1.75}
+
+/* ─── SHOP BY CATEGORY ─── */
+.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border)}
+.cat-card{background:var(--white);position:relative;overflow:hidden;cursor:pointer;aspect-ratio:1}
+.cat-card-img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.cat-card:hover .cat-card-img{transform:scale(1.06)}
+.cat-card-label{position:absolute;bottom:0;left:0;right:0;padding:20px;background:linear-gradient(to top,rgba(10,8,5,.65) 0%,transparent 100%)}
+.cat-card-label span{display:block;font-family:var(--serif);font-size:1.25rem;font-style:italic;color:var(--white)}
+.cat-card-label small{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.65)}
+
+/* ─── VIDEO / MARQUEE BAND ─── */
+.marquee-band{background:var(--charcoal);padding:18px 0;overflow:hidden}
+.marquee-track{display:flex;gap:48px;white-space:nowrap;animation:marquee 25s linear infinite}
+.marquee-item{font-family:var(--serif);font-size:1.1rem;font-style:italic;color:rgba(255,255,255,.45);display:flex;align-items:center;gap:48px;flex-shrink:0}
+.marquee-item::after{content:'✦';color:var(--gold);font-size:.75rem;font-style:normal}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ─── STORY / EDITORIAL ─── */
+.story-split{display:grid;grid-template-columns:1fr 1fr;min-height:600px}
+.story-img{position:relative;overflow:hidden}
+.story-img img{width:100%;height:100%;object-fit:cover;min-height:500px}
+.story-body{display:flex;flex-direction:column;justify-content:center;padding:80px 80px 80px 72px;background:var(--cream)}
+.story-body .eyebrow{margin-bottom:24px}
+.story-body h2{margin-bottom:24px;line-height:1.2}
+.story-body p{margin-bottom:32px}
+.story-numbers{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px;padding-top:40px;border-top:1px solid var(--border)}
+.story-num strong{font-family:var(--serif);font-size:2.4rem;font-weight:300;display:block;line-height:1;margin-bottom:4px}
+.story-num span{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--mid)}
+
+/* ─── TESTIMONIALS ─── */
+.testimonials{background:var(--stone);padding:100px 0}
+.testimonials-slider{display:flex;overflow:hidden}
+.testi-track{display:flex;transition:transform .6s var(--ease)}
+.testi-slide{min-width:100%;padding:0 60px;text-align:center}
+.testi-stars{display:flex;justify-content:center;gap:4px;margin-bottom:24px;font-size:1rem;color:var(--gold)}
+.testi-quote{font-family:var(--serif);font-size:clamp(1.2rem,2vw,1.7rem);font-style:italic;max-width:680px;margin:0 auto 28px;line-height:1.6}
+.testi-author{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mid)}
+.testi-author strong{color:var(--charcoal);display:block;margin-bottom:3px;font-family:var(--serif);font-size:.9rem;font-style:italic;letter-spacing:.02em;text-transform:none}
+.testi-nav{display:flex;justify-content:center;gap:8px;margin-top:40px}
+.testi-dot{width:24px;height:1px;background:var(--border);cursor:pointer;transition:all .3s}
+.testi-dot.active{background:var(--charcoal);width:48px}
+
+/* ─── BENEFITS ─── */
+.benefits-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.benefit-card{background:var(--white);padding:48px 36px;text-align:center;transition:background .3s}
+.benefit-card:hover{background:var(--cream)}
+.benefit-icon{font-size:2rem;margin-bottom:20px;display:block}
+.benefit-card h4{font-family:var(--serif);font-size:1.1rem;margin-bottom:10px}
+.benefit-card p{font-size:.8rem;color:var(--mid);line-height:1.7}
+
+/* ─── GALLERY ─── */
+.gallery-masonry{columns:4;gap:2px}
+.gallery-item{break-inside:avoid;position:relative;overflow:hidden;cursor:pointer;margin-bottom:2px}
+.gallery-item img{width:100%;display:block;transition:transform .6s var(--ease)}
+.gallery-item:hover img{transform:scale(1.04)}
+.gallery-overlay{position:absolute;inset:0;background:rgba(10,8,5,0);display:flex;align-items:center;justify-content:center;transition:background .3s}
+.gallery-item:hover .gallery-overlay{background:rgba(10,8,5,.3)}
+.gallery-zoom{opacity:0;color:var(--white);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;transform:translateY(6px);transition:all .3s}
+.gallery-item:hover .gallery-zoom{opacity:1;transform:translateY(0)}
+
+/* ─── STORE INFO ─── */
+.store-section{display:grid;grid-template-columns:1fr 1fr}
+.store-map{background:var(--stone);min-height:460px}
+.store-map iframe{width:100%;height:100%;display:block;filter:grayscale(20%)}
+.store-info{padding:80px 72px;background:var(--charcoal)}
+.store-info .eyebrow{margin-bottom:24px}
+.store-info h2{color:var(--white);margin-bottom:32px;font-style:italic}
+.store-detail{display:flex;gap:16px;margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.1)}
+.store-detail:last-of-type{border-bottom:none}
+.store-detail-icon{font-size:1.1rem;margin-top:2px;flex-shrink:0}
+.store-detail p{font-size:.8rem;color:rgba(255,255,255,.65);line-height:1.7}
+.store-detail strong{display:block;color:var(--white);font-family:var(--serif);font-size:1rem;font-weight:300;margin-bottom:4px}
+.store-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+
+/* ─── CONTACT ─── */
+.contact-section{padding:100px 0;background:var(--cream)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start}
+.contact-info h2{margin-bottom:16px;font-style:italic}
+.contact-info p{margin-bottom:40px}
+.contact-cards{display:flex;flex-direction:column;gap:16px}
+.contact-card{padding:24px;background:var(--white);border-left:3px solid var(--gold)}
+.contact-card strong{display:block;font-family:var(--serif);font-size:1rem;margin-bottom:4px}
+.contact-card span{font-size:.8rem;color:var(--mid)}
+.contact-form{display:flex;flex-direction:column;gap:20px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.form-group{display:flex;flex-direction:column;gap:8px}
+.form-group label{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.form-group input,.form-group select,.form-group textarea{border:1px solid var(--border);padding:14px 16px;font-family:var(--sans);font-size:.875rem;color:var(--charcoal);background:var(--white);outline:none;transition:border-color .3s;-webkit-appearance:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--charcoal)}
+.form-group textarea{resize:none;min-height:120px}
+
+/* ─── FOOTER ─── */
+footer{background:var(--charcoal);padding:80px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;gap:40px;padding:0 40px;max-width:1320px;margin:0 auto}
+.footer-brand .logo{font-family:var(--serif);font-size:1.4rem;font-weight:300;letter-spacing:.06em;color:var(--white);margin-bottom:4px}
+.footer-brand .logo span{display:block;font-size:.55rem;font-family:var(--sans);letter-spacing:.25em;text-transform:uppercase;color:var(--gold-light);margin-top:2px}
+.footer-brand p{color:rgba(255,255,255,.5);font-size:.8rem;line-height:1.75;margin-top:16px;margin-bottom:28px}
+.footer-col h5{font-family:var(--sans);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-light);margin-bottom:20px}
+.footer-col ul{display:flex;flex-direction:column;gap:12px}
+.footer-col ul a{font-size:.8rem;color:rgba(255,255,255,.5);transition:color .2s}
+.footer-col ul a:hover{color:var(--white)}
+.footer-bottom{margin-top:64px;border-top:1px solid rgba(255,255,255,.08);padding:24px 40px;max-width:1320px;margin-left:auto;margin-right:auto;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:.7rem;color:rgba(255,255,255,.35);letter-spacing:.05em}
+.social-links{display:flex;gap:20px}
+.social-links a{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);transition:color .2s}
+.social-links a:hover{color:var(--gold-light)}
+.newsletter-form{display:flex;max-width:320px}
+.newsletter-form input{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-right:none;padding:12px 16px;color:var(--white);font-size:.75rem;font-family:var(--sans);outline:none}
+.newsletter-form input::placeholder{color:rgba(255,255,255,.35)}
+.newsletter-form button{background:var(--gold);color:var(--white);padding:12px 20px;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;transition:background .2s}
+.newsletter-form button:hover{background:#9a7222}
+
+/* ─── CART DRAWER ─── */
+.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1100;opacity:0;pointer-events:none;transition:opacity .4s}
+.cart-overlay.open{opacity:1;pointer-events:all}
+.cart-drawer{position:fixed;right:0;top:0;bottom:0;width:420px;max-width:90vw;background:var(--white);z-index:1101;transform:translateX(100%);transition:transform .5s var(--ease);display:flex;flex-direction:column}
+.cart-drawer.open{transform:translateX(0)}
+.cart-header{display:flex;justify-content:space-between;align-items:center;padding:28px 32px;border-bottom:1px solid var(--border)}
+.cart-header h3{font-family:var(--serif);font-size:1.4rem;font-style:italic}
+.cart-close{font-size:1.3rem;color:var(--mid);transition:color .2s}
+.cart-close:hover{color:var(--charcoal)}
+.cart-items{flex:1;overflow-y:auto;padding:24px 32px}
+.cart-item{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--border)}
+.cart-item-img{width:80px;height:96px;object-fit:cover;background:var(--stone)}
+.cart-item-info{flex:1}
+.cart-item-name{font-family:var(--serif);font-size:1rem;margin-bottom:4px}
+.cart-item-meta{font-size:.75rem;color:var(--mid);margin-bottom:12px}
+.cart-item-qty{display:flex;align-items:center;gap:12px;font-size:.8rem}
+.qty-btn{width:28px;height:28px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:all .2s}
+.qty-btn:hover{border-color:var(--charcoal)}
+.cart-footer{padding:24px 32px;border-top:1px solid var(--border)}
+.cart-subtotal{display:flex;justify-content:space-between;margin-bottom:20px}
+.cart-subtotal span{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mid)}
+.cart-subtotal strong{font-family:var(--serif);font-size:1.3rem;font-weight:300}
+.cart-actions{display:flex;flex-direction:column;gap:10px}
+.cart-actions .btn{text-align:center;justify-content:center}
+.rental-notice{background:var(--blush);border-left:3px solid var(--gold);padding:12px 16px;font-size:.75rem;color:var(--mid);margin-bottom:20px;line-height:1.5}
+.rental-notice strong{color:var(--gold);display:block;margin-bottom:3px;font-family:var(--serif)}
+
+/* ─── FLOATING BUTTONS ─── */
+.float-btns{position:fixed;bottom:32px;right:32px;z-index:900;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.float-btn{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;box-shadow:0 4px 20px rgba(0,0,0,.15);transition:transform .3s,box-shadow .3s}
+.float-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.2)}
+.float-wa{background:#25D366;color:#fff}
+.float-call{background:var(--gold);color:#fff}
+.float-top{background:var(--charcoal);color:#fff;font-size:.8rem;letter-spacing:.05em;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s}
+.float-top.visible{opacity:1;pointer-events:all}
+.float-label{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);text-align:right;display:none}
+
+/* ─── SEARCH ─── */
+.search-overlay{position:fixed;inset:0;background:rgba(255,255,255,.97);z-index:1200;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
+.search-overlay.open{opacity:1;pointer-events:all}
+.search-form{display:flex;align-items:center;gap:0;border-bottom:2px solid var(--charcoal);padding-bottom:8px;width:min(600px,90vw);margin-bottom:16px}
+.search-form input{flex:1;font-family:var(--serif);font-size:2rem;font-style:italic;background:none;border:none;outline:none;color:var(--charcoal)}
+.search-form input::placeholder{color:var(--light)}
+.search-form button{font-size:1.2rem;color:var(--mid)}
+.search-close{position:absolute;top:24px;right:32px;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;cursor:pointer}
+
+/* ─── ANIMATIONS ─── */
+.fade-up{opacity:0;transform:translateY(32px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.fade-in{opacity:0;transition:opacity .8s var(--ease)}
+.fade-in.visible{opacity:1}
+.stagger > *:nth-child(1){transition-delay:.05s}
+.stagger > *:nth-child(2){transition-delay:.12s}
+.stagger > *:nth-child(3){transition-delay:.19s}
+.stagger > *:nth-child(4){transition-delay:.26s}
+.stagger > *:nth-child(5){transition-delay:.33s}
+.stagger > *:nth-child(6){transition-delay:.40s}
+.stagger > *:nth-child(7){transition-delay:.47s}
+.stagger > *:nth-child(8){transition-delay:.54s}
+
+/* ─── PRODUCT SVG IMAGES (placeholder artwork) ─── */
+.svg-jewel{width:100%;height:100%;object-fit:cover}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1100px){
+  .products-grid{grid-template-columns:repeat(3,1fr)}
+  .benefits-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-masonry{columns:3}
+  .footer-grid{grid-template-columns:1fr 1fr 1fr}
+}
+@media(max-width:900px){
+  .container{padding:0 24px}
+  .section{padding:72px 0}
+  .promo-duo{grid-template-columns:1fr;height:auto}
+  .promo-card{height:340px}
+  .story-split{grid-template-columns:1fr}
+  .store-section{grid-template-columns:1fr}
+  .store-map{min-height:300px}
+  .contact-grid{grid-template-columns:1fr}
+  .category-grid{grid-template-columns:repeat(2,1fr)}
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-masonry{columns:2}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .story-body{padding:48px 40px}
+}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .nav-inner{grid-template-columns:auto 1fr auto}
+  .hamburger{display:flex}
+  .hero-stats{display:none}
+  .hero-content{padding:0 24px 60px}
+  .section{padding:60px 0}
+  .section-header{margin-bottom:40px}
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .form-row{grid-template-columns:1fr}
+  .gallery-masonry{columns:2}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;gap:16px;text-align:center}
+  .store-info{padding:48px 28px}
+  .nav-icons .btn{display:none}
+  .cat-strip-inner{gap:8px}
+  .cat-pill-img{width:68px;height:68px}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     SEARCH OVERLAY
+═══════════════════════════════════════════ -->
+<div class="search-overlay" id="searchOverlay">
+  <span class="search-close" onclick="toggleSearch()">✕ Close</span>
+  <div class="search-form">
+    <input type="text" placeholder="Search jewellery…" id="searchInput" autocomplete="off"/>
+    <button>🔍</button>
+  </div>
+  <p class="body" style="color:var(--light)">Necklaces, Bangles, Rings, Earrings…</p>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     MOBILE MENU
+═══════════════════════════════════════════ -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="mobile-close" onclick="toggleMenu()">✕ Close</span>
+  <a href="#" onclick="toggleMenu()">Home</a>
+  <a href="#shop" onclick="toggleMenu()">Shop</a>
+  <a href="#categories" onclick="toggleMenu()">Collections</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HEADER
+═══════════════════════════════════════════ -->
+<header id="siteHeader" class="light">
+  <div class="nav-inner">
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Collections</a>
+      <a href="#about">About</a>
+    </nav>
+    <a href="#" class="nav-logo">
+      SHRI SAI
+      <span>Bridal Jewels</span>
+    </a>
+    <div class="nav-icons">
+      <button onclick="toggleSearch()" title="Search">🔍</button>
+      <button title="Wishlist">♡</button>
+      <button onclick="toggleCart()" title="Cart">
+        🛍 <span class="cart-badge">3</span>
+      </button>
+      <button class="hamburger" id="menuBtn" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <!-- Beautiful gradient jewel-toned hero placeholder -->
+    <svg class="hero-bg-img" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="hg1" cx="60%" cy="40%" r="70%"><stop offset="0%" stop-color="#D4C5B0"/><stop offset="100%" stop-color="#8B7355"/></radialGradient>
+        <radialGradient id="hg2" cx="20%" cy="80%" r="50%"><stop offset="0%" stop-color="#C4A882" stop-opacity=".6"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+      </defs>
+      <rect width="1440" height="900" fill="url(#hg1)"/>
+      <rect width="1440" height="900" fill="url(#hg2)"/>
+      <!-- Jewellery silhouette art -->
+      <g opacity=".12" transform="translate(700,100)">
+        <!-- Necklace outline -->
+        <circle cx="240" cy="340" r="220" fill="none" stroke="#8B5E2A" stroke-width="3"/>
+        <circle cx="240" cy="340" r="195" fill="none" stroke="#8B5E2A" stroke-width="1.5"/>
+        <!-- Pendant -->
+        <ellipse cx="240" cy="560" rx="32" ry="44" fill="#B8882E" opacity=".7"/>
+        <ellipse cx="240" cy="560" rx="20" ry="30" fill="none" stroke="#FFF" stroke-width="2"/>
+        <!-- Small gems around necklace -->
+        <circle cx="240" cy="120" r="8" fill="#B8882E"/>
+        <circle cx="180" cy="130" r="6" fill="#9a7222"/>
+        <circle cx="300" cy="130" r="6" fill="#9a7222"/>
+        <circle cx="120" cy="160" r="5" fill="#B8882E"/>
+        <circle cx="360" cy="160" r="5" fill="#B8882E"/>
+      </g>
+      <!-- Decorative dots -->
+      <g opacity=".3">
+        <circle cx="200" cy="150" r="2" fill="#D4AF37"/>
+        <circle cx="1200" cy="300" r="3" fill="#D4AF37"/>
+        <circle cx="900" cy="100" r="2" fill="#D4AF37"/>
+        <circle cx="300" cy="600" r="2" fill="#D4AF37"/>
+        <circle cx="1100" cy="700" r="2.5" fill="#D4AF37"/>
+      </g>
+      <!-- Model silhouette suggestion (abstract) -->
+      <rect x="850" y="0" width="440" height="900" fill="rgba(120,90,50,0.18)"/>
+    </svg>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content fade-up">
+    <p class="eyebrow">New Bridal Collection 2025</p>
+    <h1 class="display">Adorned<br/>in Gold,<br/>Wed in Grace</h1>
+    <p class="body" style="color:rgba(255,255,255,.7)">Heirloom-quality bridal jewellery crafted for the most sacred moments of your life.</p>
+    <div class="hero-btns">
+      <a href="#shop" class="btn btn-ghost">Shop Now</a>
+      <a href="#contact" class="btn" style="background:var(--gold);color:#fff">Book Rental</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <strong>1200+</strong>
+      <span>Brides Adorned</span>
+    </div>
+    <div class="hero-stat">
+      <strong>22K</strong>
+      <span>Gold Purity</span>
+    </div>
+    <div class="hero-stat">
+      <strong>15+</strong>
+      <span>Years Crafting</span>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     MARQUEE BAND
+═══════════════════════════════════════════ -->
+<div class="marquee-band">
+  <div class="marquee-track">
+    <span class="marquee-item">Bridal Necklace Sets</span>
+    <span class="marquee-item">Temple Jewellery</span>
+    <span class="marquee-item">Vanki &amp; Armlets</span>
+    <span class="marquee-item">Maang Tikka</span>
+    <span class="marquee-item">Waist Chains</span>
+    <span class="marquee-item">Nose Pins</span>
+    <span class="marquee-item">Gold Bangles</span>
+    <span class="marquee-item">Jewellery Rental</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="marquee-item">Bridal Necklace Sets</span>
+    <span class="marquee-item">Temple Jewellery</span>
+    <span class="marquee-item">Vanki &amp; Armlets</span>
+    <span class="marquee-item">Maang Tikka</span>
+    <span class="marquee-item">Waist Chains</span>
+    <span class="marquee-item">Nose Pins</span>
+    <span class="marquee-item">Gold Bangles</span>
+    <span class="marquee-item">Jewellery Rental</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     CATEGORY STRIP
+═══════════════════════════════════════════ -->
+<section class="cat-strip">
+  <div class="container">
+    <div class="cat-strip-inner stagger">
+      <div class="cat-pill"><div class="cat-pill-img"><?xml version="1.0"?><svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="45" r="45" fill="#F5EDE0"/><circle cx="45" cy="30" r="16" fill="none" stroke="#B8882E" stroke-width="2"/><path d="M45 46 Q35 60 45 72 Q55 60 45 46" fill="#B8882E" opacity=".7"/></svg></div><span>Necklaces</span></div>
+      <div class="cat-pill"><div class="cat-pill-img"><svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="45" r="45" fill="#F0EAE0"/><ellipse cx="45" cy="45" rx="8" ry="20" fill="none" stroke="#B8882E" stroke-width="2"/><circle cx="45" cy="28" r="5" fill="#B8882E"/><circle cx="45" cy="62" r="5" fill="#B8882E"/></svg></div><span>Earrings</span></div>
+      <div class="cat-pill"><div class="cat-pill-img"><svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="45" r="45" fill="#EDE8E0"/><circle cx="45" cy="45" r="20" fill="none" stroke="#B8882E" stroke-width="3"/><circle cx="45" cy="45" r="8" fill="#B8882E" opacity=".5"/></svg></div><span>Rings</span></div>
+      <div class="cat-pill"><div class="cat-pill-img"><svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="45" r="45" fill="#F2EBE0"/><path d="M20 50 Q45 25 70 50" fill="none" stroke="#B8882E" stroke-width="3"/><circle cx="20" cy="50" r="4" fill="#B8882E"/><circle cx="70" cy="50" r="4" fill="#B8882E"/></svg></div><span>Bangles</span></div>
+      <div class="cat-pill"><div class="cat-pill-img"><svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="45" r="45" fill="#EDE5D8"/><path d="M25 45 Q45 20 65 45 Q45 70 25 45" fill="none" stroke="#B8882E" stroke-width="2"/><circle cx="45" cy="45" r="6" fill="#B8882E"/></svg></div><span>Pendants</span></div>
+      <div class="cat-pill"><div class="cat-pill-img"><svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="45" r="45" fill="#F0E8DC"/><path d="M30 65 L45 20 L60 65" fill="none" stroke="#B8882E" stroke-width="2"/><line x1="35" y1="50" x2="55" y2="50" stroke="#B8882E" stroke-width="2"/></svg></div><span>Maang Tikka</span></div>
+      <div class="cat-pill"><div class="cat-pill-img"><svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="45" r="45" fill="#EDE0D4"/><path d="M15 55 Q20 35 45 30 Q70 35 75 55 Q60 72 45 70 Q30 72 15 55" fill="none" stroke="#B8882E" stroke-width="2"/></svg></div><span>Haar</span></div>
+      <div class="cat-pill"><div class="cat-pill-img"><svg viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="45" r="45" fill="#F2E8E0"/><rect x="30" y="30" width="30" height="30" rx="4" fill="none" stroke="#B8882E" stroke-width="2"/><circle cx="45" cy="45" r="5" fill="#B8882E" opacity=".6"/></svg></div><span>Sets</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PROMO DUO BANNERS
+═══════════════════════════════════════════ -->
+<div class="promo-duo">
+  <div class="promo-card">
+    <svg class="promo-card-img" viewBox="0 0 720 540" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs><linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#C4A06A"/><stop offset="100%" stop-color="#7A5A30"/></linearGradient></defs>
+      <rect width="720" height="540" fill="url(#pg1)"/>
+      <!-- Necklace art -->
+      <circle cx="360" cy="240" r="160" fill="none" stroke="rgba(255,220,120,.35)" stroke-width="2"/>
+      <circle cx="360" cy="240" r="130" fill="none" stroke="rgba(255,220,120,.2)" stroke-width="1"/>
+      <ellipse cx="360" cy="400" rx="28" ry="40" fill="rgba(255,215,80,.4)"/>
+      <text x="360" y="420" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="rgba(255,255,255,.5)" letter-spacing="3">NECKLACE</text>
+    </svg>
+    <div class="promo-card-overlay"></div>
+    <div class="promo-card-content">
+      <p class="eyebrow">Bridal Collection</p>
+      <h3>Temple Gold<br/>Necklace Sets</h3>
+      <a href="#shop" class="link-arrow">Discover More</a>
+    </div>
+  </div>
+  <div class="promo-card">
+    <svg class="promo-card-img" viewBox="0 0 720 540" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs><linearGradient id="pg2" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#A0835A"/><stop offset="100%" stop-color="#D4B896"/></linearGradient></defs>
+      <rect width="720" height="540" fill="url(#pg2)"/>
+      <!-- Bangle art -->
+      <circle cx="360" cy="270" r="140" fill="none" stroke="rgba(255,220,120,.4)" stroke-width="14"/>
+      <circle cx="360" cy="270" r="115" fill="none" stroke="rgba(255,220,120,.2)" stroke-width="5"/>
+      <circle cx="360" cy="130" r="10" fill="rgba(255,215,80,.6)"/>
+      <circle cx="360" cy="410" r="10" fill="rgba(255,215,80,.6)"/>
+    </svg>
+    <div class="promo-card-overlay"></div>
+    <div class="promo-card-content">
+      <p class="eyebrow">For Rent &amp; Purchase</p>
+      <h3>Kangan &amp; Bangles<br/>Bridal Sets</h3>
+      <a href="#shop" class="link-arrow">Discover More</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     FEATURED PRODUCTS
+═══════════════════════════════════════════ -->
+<section class="section" id="shop" style="background:var(--white)">
+  <div class="container">
+    <div class="section-header fade-up">
+      <p class="eyebrow">Handpicked for You</p>
+      <h2 class="headline">Bridal Jewellery</h2>
+    </div>
+    <div class="products-tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'new')">New Arrivals</button>
+      <button class="tab-btn" onclick="switchTab(this,'best')">Best Selling</button>
+      <button class="tab-btn" onclick="switchTab(this,'rental')">For Rental</button>
+      <button class="tab-btn" onclick="switchTab(this,'sale')">Offers</button>
+    </div>
+    <div class="products-grid stagger" id="productsGrid">
+      <!-- Products generated by JS below -->
+    </div>
+    <div class="products-footer fade-up">
+      <a href="#" class="btn btn-outline">View All Collections</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FULL WIDTH BANNER
+═══════════════════════════════════════════ -->
+<div class="fw-banner">
+  <svg class="fw-banner-img" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <defs><linearGradient id="fwg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8B6A3A"/><stop offset="60%" stop-color="#C4A06A"/><stop offset="100%" stop-color="#E8D5B0"/></linearGradient></defs>
+    <rect width="1440" height="500" fill="url(#fwg)"/>
+    <!-- Decorative ring art right side -->
+    <circle cx="1150" cy="250" r="200" fill="none" stroke="rgba(255,230,150,.2)" stroke-width="3"/>
+    <circle cx="1150" cy="250" r="150" fill="none" stroke="rgba(255,230,150,.15)" stroke-width="2"/>
+    <circle cx="1150" cy="250" r="80" fill="rgba(255,215,80,.08)"/>
+    <!-- Diamond sparkles -->
+    <g fill="rgba(255,240,180,.5)">
+      <polygon points="1050,150 1054,160 1065,160 1056,167 1059,178 1050,171 1041,178 1044,167 1035,160 1046,160" transform="scale(0.8) translate(320,40)"/>
+      <polygon points="1050,150 1054,160 1065,160 1056,167 1059,178 1050,171 1041,178 1044,167 1035,160 1046,160" transform="scale(0.5) translate(1400,300)"/>
+    </g>
+  </svg>
+  <div class="fw-banner-overlay"></div>
+  <div class="fw-banner-content fade-up">
+    <p class="eyebrow">Limited Period Offer</p>
+    <h2>Bridal Gold Sets<br/>Up to 15% Off</h2>
+    <p class="body" style="color:rgba(255,255,255,.7)">Our most exquisite bridal necklace and earring sets, handcrafted in 22K gold — available to purchase or rent for your wedding day.</p>
+    <a href="#shop" class="btn btn-ghost">Shop the Offer</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SHOP BY CATEGORY (8-grid)
+═══════════════════════════════════════════ -->
+<section class="section" id="categories" style="padding-top:80px">
+  <div class="container">
+    <div class="section-header fade-up">
+      <p class="eyebrow">Browse Collections</p>
+      <h2 class="headline">Shop by Category</h2>
+    </div>
+  </div>
+  <div class="category-grid stagger">
+    <div class="cat-card"><svg class="cat-card-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="400" fill="#E8DDD0"/><circle cx="200" cy="180" r="90" fill="none" stroke="#B8882E" stroke-width="4" opacity=".6"/><ellipse cx="200" cy="290" rx="25" ry="38" fill="#B8882E" opacity=".5"/><circle cx="200" cy="180" r="15" fill="#B8882E" opacity=".4"/></svg><div class="cat-card-label"><span>Necklaces</span><small>82 Pieces</small></div></div>
+    <div class="cat-card"><svg class="cat-card-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="400" fill="#E0D8CC"/><ellipse cx="200" cy="200" rx="50" ry="130" fill="none" stroke="#B8882E" stroke-width="3" opacity=".6"/><circle cx="200" cy="80" r="20" fill="#B8882E" opacity=".5"/><circle cx="200" cy="320" r="20" fill="#B8882E" opacity=".5"/></svg><div class="cat-card-label"><span>Earrings</span><small>156 Pairs</small></div></div>
+    <div class="cat-card"><svg class="cat-card-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="400" fill="#EDE5D8"/><circle cx="200" cy="200" r="110" fill="none" stroke="#B8882E" stroke-width="18" opacity=".5"/><circle cx="200" cy="200" r="40" fill="#B8882E" opacity=".15"/></svg><div class="cat-card-label"><span>Bangles</span><small>64 Sets</small></div></div>
+    <div class="cat-card"><svg class="cat-card-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="400" fill="#E5DDD0"/><rect x="155" y="140" width="90" height="120" rx="45" fill="none" stroke="#B8882E" stroke-width="3" opacity=".6"/><circle cx="200" cy="200" r="20" fill="#B8882E" opacity=".5"/></svg><div class="cat-card-label"><span>Rings</span><small>48 Styles</small></div></div>
+    <div class="cat-card"><svg class="cat-card-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="400" fill="#EAE2D5"/><path d="M200 80 Q270 140 270 200 Q270 280 200 320 Q130 280 130 200 Q130 140 200 80" fill="none" stroke="#B8882E" stroke-width="3" opacity=".5"/><circle cx="200" cy="320" r="18" fill="#B8882E" opacity=".5"/></svg><div class="cat-card-label"><span>Pendants</span><small>37 Designs</small></div></div>
+    <div class="cat-card"><svg class="cat-card-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="400" fill="#E3DAD0"/><path d="M160 100 L200 60 L240 100 L240 340 L200 370 L160 340 Z" fill="none" stroke="#B8882E" stroke-width="2" opacity=".5"/><circle cx="200" cy="60" r="14" fill="#B8882E" opacity=".5"/></svg><div class="cat-card-label"><span>Maang Tikka</span><small>29 Styles</small></div></div>
+    <div class="cat-card"><svg class="cat-card-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="400" fill="#E8E0D5"/><path d="M80 200 Q80 120 200 120 Q320 120 320 200 Q320 280 200 280 Q80 280 80 200" fill="none" stroke="#B8882E" stroke-width="3" opacity=".5"/><circle cx="140" cy="160" r="8" fill="#B8882E" opacity=".6"/><circle cx="260" cy="160" r="8" fill="#B8882E" opacity=".6"/><circle cx="200" cy="130" r="8" fill="#B8882E" opacity=".6"/></svg><div class="cat-card-label"><span>Haar Sets</span><small>41 Pieces</small></div></div>
+    <div class="cat-card"><svg class="cat-card-img" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="400" fill="#EBE3D8"/><g opacity=".5"><circle cx="200" cy="200" r="90" fill="none" stroke="#B8882E" stroke-width="15"/><circle cx="200" cy="200" r="50" fill="none" stroke="#B8882E" stroke-width="2"/><circle cx="200" cy="200" r="115" fill="none" stroke="#B8882E" stroke-width="1"/></g></svg><div class="cat-card-label"><span>Waist Chains</span><small>22 Designs</small></div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     STORY / ABOUT SPLIT
+═══════════════════════════════════════════ -->
+<section class="story-split" id="about">
+  <div class="story-img">
+    <svg viewBox="0 0 700 680" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;min-height:500px" preserveAspectRatio="xMidYMid slice">
+      <defs><linearGradient id="sg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#D4B896"/><stop offset="100%" stop-color="#8B6340"/></linearGradient></defs>
+      <rect width="700" height="680" fill="url(#sg1)"/>
+      <!-- Artisan hands with jewellery motif -->
+      <g opacity=".3" transform="translate(120,80)">
+        <circle cx="240" cy="280" r="180" fill="none" stroke="#fff" stroke-width="1"/>
+        <circle cx="240" cy="280" r="140" fill="none" stroke="#fff" stroke-width=".5"/>
+        <ellipse cx="240" cy="280" rx="30" ry="180" fill="none" stroke="rgba(255,215,80,.4)" stroke-width="2"/>
+        <ellipse cx="240" cy="280" rx="180" ry="30" fill="none" stroke="rgba(255,215,80,.4)" stroke-width="2"/>
+      </g>
+      <text x="350" y="640" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="rgba(255,255,255,.4)" letter-spacing="4">THOOTHUKUDI · SINCE 2009</text>
+    </svg>
+  </div>
+  <div class="story-body">
+    <p class="eyebrow">Our Heritage</p>
+    <h2 class="headline">Crafted with<br/>Devotion &amp;<br/>Tradition</h2>
+    <p class="body">For over 15 years, Shri Sai Bridal Jewels has adorned the brides of Thoothukudi with jewellery that honours Tamil tradition. Every piece we make or curate is a bridge between generations — carrying the weight of ritual and the light of new beginnings.</p>
+    <p class="body">Located in the heart of Ezhil Nagar, our atelier offers both purchase and premium rental jewellery — making heirloom-quality gold accessible to every family.</p>
+    <a href="#contact" class="link-arrow" style="margin-top:8px">Visit Our Store</a>
+    <div class="story-numbers stagger">
+      <div class="story-num"><strong>1200+</strong><span>Brides Adorned</span></div>
+      <div class="story-num"><strong>15+</strong><span>Years of Craft</span></div>
+      <div class="story-num"><strong>500+</strong><span>Designs Available</span></div>
+      <div class="story-num"><strong>22K</strong><span>Gold Purity</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     BENEFITS GRID
+═══════════════════════════════════════════ -->
+<section class="section" style="background:var(--cream);padding:80px 0">
+  <div class="container">
+    <div class="section-header fade-up">
+      <p class="eyebrow">Why Choose Us</p>
+      <h2 class="headline">The Shri Sai Promise</h2>
+    </div>
+    <div class="benefits-grid stagger">
+      <div class="benefit-card fade-up"><span class="benefit-icon">✦</span><h4>22K Gold Purity</h4><p class="body">Every piece is hallmarked and tested for purity — you receive exactly what you pay for.</p></div>
+      <div class="benefit-card fade-up"><span class="benefit-icon">👑</span><h4>Bridal Rental</h4><p class="body">Experience luxury bridal sets at a fraction of the cost. Advance booking available.</p></div>
+      <div class="benefit-card fade-up"><span class="benefit-icon">🛡</span><h4>Lifetime Service</h4><p class="body">Free cleaning, polishing, and minor repair for the life of your jewellery purchase.</p></div>
+      <div class="benefit-card fade-up"><span class="benefit-icon">🎁</span><h4>Custom Crafting</h4><p class="body">Commission bespoke pieces made to your exact design and budget with our master artisans.</p></div>
+      <div class="benefit-card fade-up"><span class="benefit-icon">📦</span><h4>Safe Packaging</h4><p class="body">Premium velvet boxes and secure packaging for every purchase, in-store or delivered.</p></div>
+      <div class="benefit-card fade-up"><span class="benefit-icon">🤝</span><h4>Fair Pricing</h4><p class="body">Transparent gold-rate pricing with no hidden charges. Prices updated daily.</p></div>
+      <div class="benefit-card fade-up"><span class="benefit-icon">📞</span><h4>Personal Stylist</h4><p class="body">Book a one-on-one bridal jewellery consultation — in store or over WhatsApp.</p></div>
+      <div class="benefit-card fade-up"><span class="benefit-icon">♻</span><h4>Old Gold Exchange</h4><p class="body">Exchange your old gold for new jewellery at the best rates in Thoothukudi.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════════════ -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header fade-up">
+      <p class="eyebrow">Brides Speak</p>
+      <h2 class="headline">Words of Love</h2>
+    </div>
+    <div class="testimonials-slider">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-slide">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"The necklace set I rented from Shri Sai Bridal Jewels was absolutely breathtaking. Every guest was asking where I got it. The quality and service are unmatched in all of Thoothukudi."</p>
+          <div class="testi-author"><strong>Priya Rajan</strong>Bride, November 2024</div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"We purchased the complete bridal set for my daughter's wedding. The 22K gold purity is authentic and the craftsmanship is truly heirloom quality. Worth every rupee."</p>
+          <div class="testi-author"><strong>Meenakshi Sundaram</strong>Mother of Bride, October 2024</div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"The rental process was so smooth — they kept the jewellery ready, helped me try it, and even gave styling advice for my saree. Highly recommend for any bride on a budget."</p>
+          <div class="testi-author"><strong>Karthika Devi</strong>Bride, January 2025</div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"The maang tikka and vanki set I got custom-made here were beyond my expectations. The artisans listened to every detail. I felt like royalty on my wedding day."</p>
+          <div class="testi-author"><strong>Divya Krishnamurthy</strong>Bride, December 2024</div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Excellent collection, honest pricing based on daily gold rates, and the most courteous staff. My whole family now shops here for all occasions — not just weddings."</p>
+          <div class="testi-author"><strong>Anitha Selvam</strong>Loyal Customer, 8 years</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-nav" id="testiNav">
+      <div class="testi-dot active" onclick="goToTesti(0)"></div>
+      <div class="testi-dot" onclick="goToTesti(1)"></div>
+      <div class="testi-dot" onclick="goToTesti(2)"></div>
+      <div class="testi-dot" onclick="goToTesti(3)"></div>
+      <div class="testi-dot" onclick="goToTesti(4)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     GALLERY
+═══════════════════════════════════════════ -->
+<section class="section" style="padding-top:80px;padding-bottom:0">
+  <div class="container">
+    <div class="section-header fade-up">
+      <p class="eyebrow">Gallery</p>
+      <h2 class="headline">Moments in Gold</h2>
+    </div>
+  </div>
+  <div class="gallery-masonry">
+    <!-- 8 gallery SVG placeholders with varied heights for masonry feel -->
+    <div class="gallery-item"><svg viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg" style="width:100%"><rect width="400" height="520" fill="#D4B896"/><circle cx="200" cy="220" r="120" fill="none" stroke="rgba(255,220,100,.3)" stroke-width="3"/><ellipse cx="200" cy="370" rx="30" ry="45" fill="rgba(184,136,46,.5)"/><text x="200" y="490" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(255,255,255,.4)" letter-spacing="3">NECKLACE SET</text></svg><div class="gallery-overlay"><span class="gallery-zoom">View →</span></div></div>
+    <div class="gallery-item"><svg viewBox="0 0 400 380" xmlns="http://www.w3.org/2000/svg" style="width:100%"><rect width="400" height="380" fill="#C4A06A"/><circle cx="200" cy="190" r="100" fill="none" stroke="rgba(255,220,100,.3)" stroke-width="14"/><circle cx="200" cy="190" r="40" fill="rgba(184,136,46,.4)"/><text x="200" y="355" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(255,255,255,.4)" letter-spacing="3">BANGLES</text></svg><div class="gallery-overlay"><span class="gallery-zoom">View →</span></div></div>
+    <div class="gallery-item"><svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" style="width:100%"><rect width="400" height="600" fill="#A0835A"/><g opacity=".4"><path d="M200 80 Q300 180 300 300 Q300 420 200 520 Q100 420 100 300 Q100 180 200 80" fill="none" stroke="#FFD700" stroke-width="3"/></g><text x="200" y="570" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(255,255,255,.4)" letter-spacing="3">BRIDAL SET</text></svg><div class="gallery-overlay"><span class="gallery-zoom">View →</span></div></div>
+    <div class="gallery-item"><svg viewBox="0 0 400 440" xmlns="http://www.w3.org/2000/svg" style="width:100%"><rect width="400" height="440" fill="#E8D5B0"/><ellipse cx="200" cy="200" rx="60" ry="140" fill="none" stroke="rgba(184,136,46,.5)" stroke-width="3"/><circle cx="200" cy="70" r="22" fill="rgba(184,136,46,.5)"/><circle cx="200" cy="330" r="22" fill="rgba(184,136,46,.5)"/><text x="200" y="415" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(120,80,20,.5)" letter-spacing="3">EARRINGS</text></svg><div class="gallery-overlay"><span class="gallery-zoom">View →</span></div></div>
+    <div class="gallery-item"><svg viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg" style="width:100%"><rect width="400" height="460" fill="#8B6340"/><g opacity=".4" transform="translate(70,80)"><circle cx="130" cy="130" r="95" fill="none" stroke="#FFD700" stroke-width="3"/><circle cx="130" cy="130" r="30" fill="#FFD700" opacity=".3"/></g><text x="200" y="430" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(255,255,255,.4)" letter-spacing="3">RINGS</text></svg><div class="gallery-overlay"><span class="gallery-zoom">View →</span></div></div>
+    <div class="gallery-item"><svg viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg" style="width:100%"><rect width="400" height="340" fill="#D4C0A0"/><path d="M80 170 Q200 80 320 170" fill="none" stroke="rgba(184,136,46,.5)" stroke-width="4"/><circle cx="80" cy="170" r="12" fill="rgba(184,136,46,.5)"/><circle cx="320" cy="170" r="12" fill="rgba(184,136,46,.5)"/><text x="200" y="315" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(120,80,20,.5)" letter-spacing="3">WAIST CHAIN</text></svg><div class="gallery-overlay"><span class="gallery-zoom">View →</span></div></div>
+    <div class="gallery-item"><svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" style="width:100%"><rect width="400" height="500" fill="#BF9A68"/><path d="M200 60 L220 140 L200 240 L180 140 Z" fill="rgba(255,215,80,.3)"/><circle cx="200" cy="60" r="16" fill="rgba(255,215,80,.5)"/><text x="200" y="475" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(255,255,255,.4)" letter-spacing="3">MAANG TIKKA</text></svg><div class="gallery-overlay"><span class="gallery-zoom">View →</span></div></div>
+    <div class="gallery-item"><svg viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" style="width:100%"><rect width="400" height="420" fill="#C9A87C"/><g opacity=".4"><circle cx="200" cy="180" r="110" fill="none" stroke="#FFD700" stroke-width="2"/><circle cx="200" cy="180" r="85" fill="none" stroke="#FFD700" stroke-width="2"/><circle cx="200" cy="180" r="60" fill="none" stroke="#FFD700" stroke-width="1"/></g><text x="200" y="390" text-anchor="middle" font-family="Georgia" font-size="11" fill="rgba(255,255,255,.4)" letter-spacing="3">TEMPLE JEWELLERY</text></svg><div class="gallery-overlay"><span class="gallery-zoom">View →</span></div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     STORE / MAP SECTION
+═══════════════════════════════════════════ -->
+<div class="store-section">
+  <div class="store-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.8!2d78.1198!3d8.7642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03ef49eeb7b069%3A0x4aee2b42c5ae2c96!2sThoothukudi%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" style="border:0"></iframe>
+  </div>
+  <div class="store-info">
+    <p class="eyebrow">Find Us</p>
+    <h2 class="headline">Visit Our<br/>Atelier</h2>
+    <div class="store-detail">
+      <span class="store-detail-icon">📍</span>
+      <div><strong>Address</strong><p>85, Vadakku Radha Street, Tuticorin Melur<br/>Ezhil Nagar, Thoothukudi<br/>Tamil Nadu – 628002</p></div>
+    </div>
+    <div class="store-detail">
+      <span class="store-detail-icon">📞</span>
+      <div><strong>Phone / WhatsApp</strong><p>+91 90802 42663</p></div>
+    </div>
+    <div class="store-detail">
+      <span class="store-detail-icon">🕐</span>
+      <div><strong>Store Hours</strong><p>Monday – Saturday: 9:00 AM – 8:00 PM<br/>Sunday: 10:00 AM – 6:00 PM</p></div>
+    </div>
+    <div class="store-btns">
+      <a href="https://wa.me/919080242663" target="_blank" class="btn btn-gold">WhatsApp Us</a>
+      <a href="tel:+919080242663" class="btn btn-outline" style="border-color:rgba(255,255,255,.3);color:#fff">Call Now</a>
+      <a href="https://maps.google.com/?q=Ezhil+Nagar+Thoothukudi" target="_blank" class="btn btn-ghost">Get Directions</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT FORM
+═══════════════════════════════════════════ -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <p class="eyebrow">Get in Touch</p>
+        <h2 class="headline">Book a Consultation</h2>
+        <p class="body">Whether you're shopping for your dream bridal set or interested in our jewellery rental service, our team is here to guide you personally.</p>
+        <div class="contact-cards">
+          <div class="contact-card"><strong>📞 Call / WhatsApp</strong><span>+91 90802 42663</span></div>
+          <div class="contact-card"><strong>📍 Visit Us</strong><span>Ezhil Nagar, Thoothukudi – 628002</span></div>
+          <div class="contact-card" style="border-color:var(--charcoal)"><strong>💍 Rental Advance</strong><span>25% advance required to confirm rental bookings. Balance on delivery.</span></div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <form class="contact-form" onsubmit="return false">
+          <div class="form-row">
+            <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name"/></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 XXXXXX XXXX"/></div>
+          </div>
+          <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com"/></div>
+          <div class="form-row">
+            <div class="form-group"><label>Wedding / Event Date</label><input type="date"/></div>
+            <div class="form-group"><label>Enquiry Type</label>
+              <select>
+                <option value="">Select…</option>
+                <option>Purchase – Bridal Set</option>
+                <option>Purchase – Individual Piece</option>
+                <option>Rental – Bridal Set</option>
+                <option>Rental – Individual Piece</option>
+                <option>Custom / Bespoke Order</option>
+                <option>Old Gold Exchange</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your requirements, budget, or any specific designs you have in mind…"></textarea></div>
+          <button type="submit" class="btn btn-dark" onclick="submitForm(this)">Send Enquiry →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">SHRI SAI<span>Bridal Jewels</span></div>
+      <p>Adorning the brides of Thoothukudi for over 15 years. Handcrafted gold jewellery, available to purchase or rent for the most sacred moments of life.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Your email for offers"/>
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#categories">Collections</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Categories</h5>
+      <ul>
+        <li><a href="#">Necklace Sets</a></li>
+        <li><a href="#">Earrings</a></li>
+        <li><a href="#">Bangles &amp; Rings</a></li>
+        <li><a href="#">Maang Tikka</a></li>
+        <li><a href="#">Temple Jewellery</a></li>
+        <li><a href="#">Bridal Rental</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#">Jewellery Rental</a></li>
+        <li><a href="#">Custom Orders</a></li>
+        <li><a href="#">Old Gold Exchange</a></li>
+        <li><a href="#">Bridal Styling</a></li>
+        <li><a href="#">Repair &amp; Polish</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Support</h5>
+      <ul>
+        <li><a href="#">Rental Policy</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="tel:+919080242663">+91 90802 42663</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Shri Sai Bridal Jewels, Thoothukudi. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">YouTube</a>
+      <a href="#">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     CART DRAWER
+═══════════════════════════════════════════ -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3>Your Selections</h3>
+    <button class="cart-close" onclick="toggleCart()">✕</button>
+  </div>
+  <div class="cart-items">
+    <div class="rental-notice">
+      <strong>💍 Rental Booking</strong>
+      25% advance payment is required to confirm all rental bookings. Balance due on collection.
+    </div>
+    <div class="cart-item">
+      <svg width="80" height="96" viewBox="0 0 80 96" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="96" fill="#E8DDD0"/><circle cx="40" cy="40" r="24" fill="none" stroke="#B8882E" stroke-width="2" opacity=".6"/><ellipse cx="40" cy="68" rx="8" ry="12" fill="#B8882E" opacity=".4"/></svg>
+      <div class="cart-item-info">
+        <div class="cart-item-name">Temple Gold Necklace Set</div>
+        <div class="cart-item-meta">22K Gold · For Rental</div>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="cart-item-qty">
+            <button class="qty-btn">−</button>
+            <span>1</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <span style="font-family:var(--serif);font-size:1rem">₹4,500 <small style="font-size:.65rem;color:var(--gold)">rental</small></span>
+        </div>
+      </div>
+    </div>
+    <div class="cart-item">
+      <svg width="80" height="96" viewBox="0 0 80 96" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="96" fill="#E0D8CC"/><ellipse cx="40" cy="48" rx="14" ry="32" fill="none" stroke="#B8882E" stroke-width="2" opacity=".6"/><circle cx="40" cy="20" r="8" fill="#B8882E" opacity=".4"/></svg>
+      <div class="cart-item-info">
+        <div class="cart-item-name">Kundan Earring Pair</div>
+        <div class="cart-item-meta">22K Gold · Purchase</div>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="cart-item-qty">
+            <button class="qty-btn">−</button>
+            <span>1</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <span style="font-family:var(--serif);font-size:1rem">₹18,500</span>
+        </div>
+      </div>
+    </div>
+    <div class="cart-item">
+      <svg width="80" height="96" viewBox="0 0 80 96" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="96" fill="#EDE5D8"/><circle cx="40" cy="48" r="28" fill="none" stroke="#B8882E" stroke-width="6" opacity=".5"/></svg>
+      <div class="cart-item-info">
+        <div class="cart-item-name">Kangan Bangle Set (2)</div>
+        <div class="cart-item-meta">22K Gold · Purchase</div>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="cart-item-qty">
+            <button class="qty-btn">−</button>
+            <span>1</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <span style="font-family:var(--serif);font-size:1rem">₹42,000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-subtotal">
+      <span>Subtotal (excl. rental)</span>
+      <strong>₹65,000</strong>
+    </div>
+    <div class="cart-actions">
+      <button class="btn btn-dark" style="width:100%;justify-content:center">Proceed to Checkout</button>
+      <button class="btn btn-outline" style="width:100%;justify-content:center">Continue Shopping</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     FLOATING BUTTONS
+═══════════════════════════════════════════ -->
+<div class="float-btns">
+  <button class="float-btn float-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+  <a href="tel:+919080242663" class="float-btn float-call" title="Call us">📞</a>
+  <a href="https://wa.me/919080242663?text=Hello%2C%20I%27m%20interested%20in%20bridal%20jewellery" target="_blank" class="float-btn float-wa" title="WhatsApp">💬</a>
+</div>
+
+<script>
+/* ─── DATA ─── */
+const products = {
+  new:[
+    {name:'Lakshmi Temple Haar',cat:'Necklace Sets',price:'₹1,24,000',rental:'₹5,500/day',stars:5,badge:'New',color1:'#D4B896',color2:'#C4A06A',shape:'necklace'},
+    {name:'Kundan Maang Tikka',cat:'Head Jewellery',price:'₹28,000',rental:'₹1,200/day',stars:5,badge:'New',color1:'#E8D5B0',color2:'#D4B896',shape:'tikka'},
+    {name:'Ruby Gold Vanki',cat:'Armlets',price:'₹54,000',rental:'₹2,800/day',stars:4,badge:'New',color1:'#C4A06A',color2:'#A0835A',shape:'vanki'},
+    {name:'Pearl Drop Earrings',cat:'Earrings',price:'₹18,500',rental:'₹900/day',stars:5,badge:'',color1:'#E0D8CC',color2:'#D4C8B8',shape:'earring'},
+    {name:'Bridal Kangan Set',cat:'Bangles',price:'₹72,000',rental:'₹3,500/day',stars:5,badge:'New',color1:'#EDE5D8',color2:'#D8CEBC',shape:'bangle'},
+    {name:'Gold Nose Ring',cat:'Nose Pins',price:'₹8,200',rental:null,stars:4,badge:'',color1:'#E8DDD0',color2:'#DDD0C0',shape:'ring'},
+    {name:'Waist Chain (Oddiyanam)',cat:'Waist Chains',price:'₹48,000',rental:'₹2,200/day',stars:5,badge:'',color1:'#D4C0A0',color2:'#C4B090',shape:'chain'},
+    {name:'Pavala Mala Set',cat:'Necklace Sets',price:'₹92,000',rental:'₹4,000/day',stars:5,badge:'New',color1:'#C9A87C',color2:'#B89868',shape:'necklace'},
+  ],
+  best:[
+    {name:'Bridal Gold Set (11pcs)',cat:'Bridal Combos',price:'₹3,80,000',rental:'₹18,000/day',stars:5,badge:'Best',color1:'#B8882E',color2:'#9a7222',shape:'set'},
+    {name:'Diamond Nose Pin',cat:'Nose Pins',price:'₹12,400',rental:null,stars:5,badge:'',color1:'#E5DDD0',color2:'#D5CDBE',shape:'ring'},
+    {name:'Kasumala Necklace',cat:'Necklace Sets',price:'₹1,56,000',rental:'₹6,800/day',stars:5,badge:'Best',color1:'#D4B896',color2:'#C4A886',shape:'necklace'},
+    {name:'Jhumka Earrings',cat:'Earrings',price:'₹24,000',rental:'₹1,100/day',stars:4,badge:'',color1:'#DDD0C0',color2:'#CFC0B0',shape:'earring'},
+    {name:'Gold Anklet Pair',cat:'Anklets',price:'₹32,000',rental:'₹1,500/day',stars:5,badge:'Best',color1:'#E8D5B0',color2:'#D8C5A0',shape:'chain'},
+    {name:'Meenakari Ring',cat:'Rings',price:'₹9,800',rental:null,stars:4,badge:'',color1:'#E0D8CC',color2:'#D0C8BC',shape:'ring'},
+    {name:'Haar Necklace Set',cat:'Necklace Sets',price:'₹2,10,000',rental:'₹9,500/day',stars:5,badge:'Best',color1:'#C4A06A',color2:'#B4906A',shape:'necklace'},
+    {name:'Bridal Bangles (24pc)',cat:'Bangles',price:'₹1,08,000',rental:'₹5,000/day',stars:5,badge:'',color1:'#EDE5D8',color2:'#DDD5C8',shape:'bangle'},
+  ],
+  rental:[
+    {name:'Full Bridal Combo',cat:'For Rental',price:null,rental:'₹22,000/day',stars:5,badge:'Rental',color1:'#B8882E',color2:'#9a7222',shape:'set'},
+    {name:'Temple Set (7 pcs)',cat:'For Rental',price:null,rental:'₹14,000/day',stars:5,badge:'Rental',color1:'#D4B896',color2:'#C4A06A',shape:'necklace'},
+    {name:'Necklace + Earring',cat:'For Rental',price:null,rental:'₹7,500/day',stars:4,badge:'Rental',color1:'#C4A06A',color2:'#A0835A',shape:'necklace'},
+    {name:'Bangle + Vanki Set',cat:'For Rental',price:null,rental:'₹5,800/day',stars:5,badge:'Rental',color1:'#EDE5D8',color2:'#D8CEBC',shape:'bangle'},
+    {name:'Maang Tikka + Nose',cat:'For Rental',price:null,rental:'₹2,000/day',stars:4,badge:'Rental',color1:'#E8D5B0',color2:'#D4B896',shape:'tikka'},
+    {name:'Waist Chain',cat:'For Rental',price:null,rental:'₹2,200/day',stars:5,badge:'Rental',color1:'#D4C0A0',color2:'#C4B090',shape:'chain'},
+    {name:'Jhumka Pair',cat:'For Rental',price:null,rental:'₹900/day',stars:4,badge:'Rental',color1:'#DDD0C0',color2:'#CFC0B0',shape:'earring'},
+    {name:'Haar Set',cat:'For Rental',price:null,rental:'₹8,000/day',stars:5,badge:'Rental',color1:'#C9A87C',color2:'#B89868',shape:'necklace'},
+  ],
+  sale:[
+    {name:'Gold Necklace Set',cat:'On Offer',price:'₹98,000',original:'₹1,15,000',rental:'₹4,200/day',stars:5,badge:'Sale',color1:'#D4B896',color2:'#C4A06A',shape:'necklace'},
+    {name:'Kundan Earrings',cat:'On Offer',price:'₹14,800',original:'₹18,500',rental:null,stars:4,badge:'Sale',color1:'#E0D8CC',color2:'#D0C8BC',shape:'earring'},
+    {name:'Gold Bangles (6pc)',cat:'On Offer',price:'₹56,000',original:'₹68,000',rental:'₹2,800/day',stars:5,badge:'Sale',color1:'#EDE5D8',color2:'#DDD5C8',shape:'bangle'},
+    {name:'Bridal Ring Set',cat:'On Offer',price:'₹22,000',original:'₹28,000',rental:null,stars:4,badge:'Sale',color1:'#E8DDD0',color2:'#D8CDBC',shape:'ring'},
+    {name:'Necklace + Tikka',cat:'On Offer',price:'₹1,42,000',original:'₹1,68,000',rental:'₹6,500/day',stars:5,badge:'Sale',color1:'#C4A06A',color2:'#B49060',shape:'set'},
+    {name:'Pavala Earrings',cat:'On Offer',price:'₹9,200',original:'₹11,500',rental:null,stars:4,badge:'Sale',color1:'#DDD5C8',color2:'#CCC5B8',shape:'earring'},
+    {name:'Waist Chain',cat:'On Offer',price:'₹38,000',original:'₹46,000',rental:'₹1,800/day',stars:5,badge:'Sale',color1:'#D4C0A0',color2:'#C4B090',shape:'chain'},
+    {name:'Gold Nose Pin',cat:'On Offer',price:'₹6,400',original:'₹8,200',rental:null,stars:4,badge:'Sale',color1:'#E8DDD0',color2:'#D8CDB8',shape:'ring'},
+  ]
+};
+
+function shapeSVG(shape,c1,c2){
+  const s={
+    necklace:`<circle cx="100" cy="90" r="60" fill="none" stroke="${c2}" stroke-width="2.5" opacity=".6"/><ellipse cx="100" cy="158" rx="16" ry="24" fill="${c2}" opacity=".5"/>`,
+    earring:`<ellipse cx="100" cy="108" rx="28" ry="68" fill="none" stroke="${c2}" stroke-width="2.5" opacity=".6"/><circle cx="100" cy="48" r="14" fill="${c2}" opacity=".5"/>`,
+    bangle:`<circle cx="100" cy="108" r="60" fill="none" stroke="${c2}" stroke-width="12" opacity=".5"/>`,
+    ring:`<circle cx="100" cy="108" r="48" fill="none" stroke="${c2}" stroke-width="3" opacity=".6"/><circle cx="100" cy="108" r="18" fill="${c2}" opacity=".3"/>`,
+    tikka:`<path d="M100 50 L116 110 L100 190 L84 110 Z" fill="none" stroke="${c2}" stroke-width="2.5" opacity=".5"/><circle cx="100" cy="50" r="14" fill="${c2}" opacity=".5"/>`,
+    chain:`<path d="M30 108 Q100 68 170 108" fill="none" stroke="${c2}" stroke-width="3" opacity=".5"/><circle cx="30" cy="108" r="7" fill="${c2}" opacity=".5"/><circle cx="170" cy="108" r="7" fill="${c2}" opacity=".5"/>`,
+    vanki:`<path d="M60 60 Q40 108 60 156 Q100 178 140 156 Q160 108 140 60 Q100 48 60 60" fill="none" stroke="${c2}" stroke-width="2.5" opacity=".5"/>`,
+    set:`<circle cx="100" cy="85" r="55" fill="none" stroke="${c2}" stroke-width="2" opacity=".5"/><circle cx="70" cy="148" r="12" fill="${c2}" opacity=".4"/><circle cx="100" cy="152" r="12" fill="${c2}" opacity=".4"/><circle cx="130" cy="148" r="12" fill="${c2}" opacity=".4"/>`,
+  };
+  return s[shape]||s.necklace;
+}
+
+function renderProducts(tab){
+  const grid=document.getElementById('productsGrid');
+  const list=products[tab]||products.new;
+  grid.innerHTML=list.map((p,i)=>{
+    const badge=p.badge?`<span class="product-badge${p.badge==='Rental'?' rental':''}">${p.badge}</span>`:'';
+    const stars=[...Array(5)].map((_,j)=>`<span class="star${j<p.stars?'':' empty'}">★</span>`).join('');
+    const priceHtml=p.price
+      ?`<span class="product-price">${p.original?`<span class="original">${p.original}</span>`:''}${p.price}${p.rental?`<span class="rental-tag"> · ${p.rental}</span>`:''}</span>`
+      :`<span class="product-price"><span class="rental-tag" style="font-size:.8rem;color:var(--gold)">Rental: ${p.rental}</span></span>`;
+    const addBtn=p.badge==='Rental'?'Book Rental':'Add to Cart';
+    return `<div class="product-card fade-up" style="transition-delay:${i*.06}s">
+      <div class="product-img-wrap">
+        ${badge}
+        <svg viewBox="0 0 200 270" xmlns="http://www.w3.org/2000/svg" class="svg-jewel"><rect width="200" height="270" fill="${p.color1}"/>${shapeSVG(p.shape,p.color1,p.color2)}</svg>
+        <svg viewBox="0 0 200 270" xmlns="http://www.w3.org/2000/svg" class="product-img-alt"><rect width="200" height="270" fill="${p.color2}"/>${shapeSVG(p.shape,p.color2,'rgba(255,240,180,.5)')}</svg>
+        <div class="product-actions">
+          <button class="product-action-btn" title="Wishlist" onclick="toggleWish(this)">♡</button>
+          <button class="product-action-btn" title="Quick View">⊹</button>
+        </div>
+        <div class="product-add">${addBtn}</div>
+      </div>
+      <div class="product-info">
+        <div class="product-cat">${p.cat}</div>
+        <div class="product-name">${p.name}</div>
+        <div class="product-stars">${stars}</div>
+        ${priceHtml}
+      </div>
+    </div>`;
+  }).join('');
+  observeAll();
+}
+
+function switchTab(btn,tab){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderProducts(tab);
+}
+
+function toggleWish(btn){
+  btn.textContent=btn.textContent==='♡'?'♥':'♡';
+  btn.style.color=btn.textContent==='♥'?'#c0392b':'';
+}
+
+/* ─── TESTIMONIALS ─── */
+let testiIdx=0;
+function goToTesti(idx){
+  testiIdx=idx;
+  document.getElementById('testiTrack').style.transform=`translateX(-${idx*100}%)`;
+  document.querySelectorAll('.testi-dot').forEach((d,i)=>d.classList.toggle('active',i===idx));
+}
+setInterval(()=>goToTesti((testiIdx+1)%5),4500);
+
+/* ─── HEADER ─── */
+const hdr=document.getElementById('siteHeader');
+window.addEventListener('scroll',()=>{
+  const s=window.scrollY>60;
+  hdr.classList.toggle('scrolled',s);
+  hdr.classList.toggle('light',!s);
+  document.getElementById('backTop').classList.toggle('visible',window.scrollY>400);
+},{ passive:true });
+
+/* ─── CART ─── */
+function toggleCart(){
+  document.getElementById('cartOverlay').classList.toggle('open');
+  document.getElementById('cartDrawer').classList.toggle('open');
+}
+
+/* ─── SEARCH ─── */
+function toggleSearch(){
+  const o=document.getElementById('searchOverlay');
+  o.classList.toggle('open');
+  if(o.classList.contains('open')) document.getElementById('searchInput').focus();
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('searchOverlay').classList.remove('open');document.getElementById('mobileMenu').classList.remove('open');}});
+
+/* ─── MENU ─── */
+function toggleMenu(){
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+/* ─── SCROLL ANIMATIONS ─── */
+function observeAll(){
+  const els=document.querySelectorAll('.fade-up, .fade-in');
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting) e.target.classList.add('visible')});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(el=>io.observe(el));
+}
+
+/* ─── FORM ─── */
+function submitForm(btn){
+  btn.textContent='✓ Enquiry Sent!';
+  btn.style.background='var(--gold)';
+  setTimeout(()=>{btn.textContent='Send Enquiry →';btn.style.background='';},3000);
+}
+
+/* ─── INIT ─── */
+document.addEventListener('DOMContentLoaded',()=>{
+  renderProducts('new');
+  observeAll();
+});
+</script>
+</body>
+</html>
